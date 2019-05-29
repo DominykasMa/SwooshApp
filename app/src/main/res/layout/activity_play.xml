@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:background="#363645"
+    tools:context=".Play">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/msgField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guess the number"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp"
+        app:fontFamily="@font/pacifico" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/Text1"
+            android:layout_width="267dp"
+            android:layout_height="45dp"
+            android:text="Guess number from 1 to"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            app:fontFamily="@font/baloo_chettan" />
+
+        <EditText
+            android:id="@+id/numberLevelField"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="10"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="#FFFFFF"
+            android:textStyle="bold"
+            android:paddingBottom="2dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_buttons"
+        android:onClick="selectLimit"
+        android:text="Select"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_buttons"
+        android:onClick="onGuessClick"
+        android:text="Guess"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/turnField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Turn:"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:fontFamily="@font/baloo_chettan" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/guessField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You guessed:"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:fontFamily="@font/baloo_chettan" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/remainingTurnField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remaining turns:"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:fontFamily="@font/baloo_chettan" />
+
+    <EditText
+        android:id="@+id/guessInputField"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Enter number you're guessing"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingBottom="2dp"
+        />
+
+
+</LinearLayout>
